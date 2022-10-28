@@ -15,10 +15,7 @@ _Descargamos los paquetes que vamos a utilizar_
 
 ```
 $ cd  
-
 $ sudo yum install gcc-c++  
-
-
 $ pip install --target build/python/lib/python3.7/site-packages pandas xlrd fsspec sfs3 openpyxl  
 
 ```
@@ -30,7 +27,7 @@ $ cd build
 $ zip -r pandas_layer.zip .
 ```
 
-_Movemos a s3 _
+_Copiamos a s3_
 ```
 $ aws s3 cp pandas_layer.zip s3://bucket/xslx/input/pandas_layer.zip 
 
